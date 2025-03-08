@@ -15,10 +15,10 @@ int main()
 	s2.setenglishgrade(9);
 	s2.sethistorygrade(8);
 
-	//cout << "comparare nume:" << comparnume(s1, s2) << endl;
-	//cout << "comparare nota mate:" << comparmate(s1, s2) << endl;
-	//cout << "comparare nota engleza:" << comparengleza(s1, s2) << endl;
-	//cout << "comparare nota istorie:" << comparistorie(s1, s2) << endl;
+	cout << "comparare nume:" << comparnume(s1, s2) << endl;
+	cout << "comparare nota mate:" << comparmate(s1, s2) << endl;
+	cout << "comparare nota engleza:" << comparengleza(s1, s2) << endl;
+	cout << "comparare nota istorie:" << comparistorie(s1, s2) << endl;
 
 }
 
