@@ -2,10 +2,6 @@
 #include "student.h"
 using namespace std;
 
-Student::Student() {
-
-}
-
 void Student::setname(const char* numestudent)
 {
 	strcpy(nume, numestudent);
