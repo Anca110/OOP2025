@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\LENOVO\\Documents\\OOP2025\\OOP2025\\laborator4\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CFBE1FA3-83CE-4984-A7CF-BD7604D6594E}|laborator4\\laborator4.vcxproj|C:\\Users\\LENOVO\\Documents\\OOP2025\\OOP2025\\laborator4\\laborator4\\Sort.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CFBE1FA3-83CE-4984-A7CF-BD7604D6594E}|laborator4\\laborator4.vcxproj|solutionrelative:laborator4\\Sort.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFBE1FA3-83CE-4984-A7CF-BD7604D6594E}|laborator4\\laborator4.vcxproj|C:\\Users\\LENOVO\\Documents\\OOP2025\\OOP2025\\laborator4\\laborator4\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CFBE1FA3-83CE-4984-A7CF-BD7604D6594E}|laborator4\\laborator4.vcxproj|solutionrelative:laborator4\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFBE1FA3-83CE-4984-A7CF-BD7604D6594E}|laborator4\\laborator4.vcxproj|C:\\Users\\LENOVO\\Documents\\OOP2025\\OOP2025\\laborator4\\laborator4\\Sort.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CFBE1FA3-83CE-4984-A7CF-BD7604D6594E}|laborator4\\laborator4.vcxproj|solutionrelative:laborator4\\Sort.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Sort.h",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\OOP2025\\OOP2025\\laborator4\\laborator4\\Sort.h",
+              "RelativeDocumentMoniker": "laborator4\\Sort.h",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\OOP2025\\OOP2025\\laborator4\\laborator4\\Sort.h",
+              "RelativeToolTip": "laborator4\\Sort.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-17T10:13:05.547Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Sort.cpp",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\OOP2025\\OOP2025\\laborator4\\laborator4\\Sort.cpp",
+              "RelativeDocumentMoniker": "laborator4\\Sort.cpp",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\OOP2025\\OOP2025\\laborator4\\laborator4\\Sort.cpp",
+              "RelativeToolTip": "laborator4\\Sort.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAK0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-17T10:11:32.785Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\OOP2025\\OOP2025\\laborator4\\laborator4\\main.cpp",
+              "RelativeDocumentMoniker": "laborator4\\main.cpp",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\OOP2025\\OOP2025\\laborator4\\laborator4\\main.cpp",
+              "RelativeToolTip": "laborator4\\main.cpp",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACIAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-17T10:11:06.474Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
