@@ -17,7 +17,7 @@ Number::Number(const char* value, int base)//=>creez o instanta Number dintr un 
 Number::Number(int value)
 {
     this->base = 10;//un nr int e implicit considerat in baza 10
-     // conversie din întreg în char( clasa e declarat char*numar)
+     // conversie din Ã®ntreg Ã®n char( clasa e declarat char*numar)
     int d = value;
     int nr = 0;
     while (d > 0)
@@ -26,8 +26,8 @@ Number::Number(int value)
         d = d / 10;
     }
 
-    this->value = new char[nr + 1];//+1 pt acel ultim caracter \0
-    this->value[nr] = '\0';//aici pun respectivul caracter in sir
+    this->value = new char[nr + 1];
+    this->value[nr] = '\0';
 
     for (int i = nr - 1; i >= 0; i--)
     {
@@ -36,10 +36,10 @@ Number::Number(int value)
     }
 }//---------------------Number n2(1234)---------------------------------
 
-Number::Number(const Number& obiect)
+Number::Number(const Number& obiect)//copy constructor
 {  // parametru-o referinta constanta la un obiect de tip number(pe care vr sa l copii)
-    this->base = obiect.base;//copiez baza din obiectul sursa in obiectul nou
-    this->value = new char[strlen(obiect.value) + 1];//aloc memorie obiectului copiat
+    this->base = obiect.base;
+    this->value = new char[strlen(obiect.value) + 1];
     memcpy(this->value, obiect.value, strlen(obiect.value) + 1);
 }//--------------------------Number n3 = n1-----------------------------
 
@@ -47,7 +47,7 @@ Number::Number(Number&& obiect)//move constructor
 {
     this->base = obiect.base;
     this->value = obiect.value;
-    obiect.value = nullptr;//pt ca l am mutat trb sa pointeze la nullptr acolo unde era, pt ca nu mai exista acolo
+    obiect.value = nullptr;
 }//---------------------Number n4 =move(n2)-------------------
 
 //operator de atribire din int
@@ -71,7 +71,7 @@ Number& Number::operator=(int number) //sterge vechiul sir, pune noul int ca sir
         this->value[i] = '0' + (number % 10);
         number = number / 10;
     }
-    this->base = 10;//fiind un int e clar in baza 10
+    this->base = 10;//fiind int=> baza 10
 
     return *this;//pointer catre obiectul modificat
 }
@@ -83,7 +83,7 @@ Number& Number::operator=(const char* sir)//cand ai deja un nr creat ca sir si i
     this->value = new char[strlen(sir) + 1];
     memcpy(this->value, sir, strlen(sir) + 1);
 
-    // baza rãmâne neschimbatã(obiectul deja exista intr o baza, doar ii inlocuiesc valoarea cu un alt string)
+    // baza rÃ£mÃ¢ne neschimbatÃ£(obiectul deja exista intr o baza, doar ii inlocuiesc valoarea cu un alt string)
 
     return *this;
 }
@@ -133,7 +133,7 @@ void Number::SwitchBase(int newBase)
     //aloc spatiu pt noul sir
     this->value = new char[nr_aux + 1];
     this->value[nr_aux] = '\0';
-    // Construiesc noul sir în noua bazã (de la final spre început)
+    // Construiesc noul sir Ã®n noua bazÃ£ (de la final spre Ã®nceput)
     for (int i = nr_aux - 1; i >= 0; i--)
     {
         int cifra = base10 % newBase;
@@ -167,9 +167,9 @@ int Number::GetBase()
 
 Number operator+(const Number& a, const Number& b)
 {
-    int A = Number::ToDecimal(a.value, a.base); // accesez pentru cã e friend
+    int A = Number::ToDecimal(a.value, a.base); // accesez pentru cÃ£ e friend
     int B = Number::ToDecimal(b.value, b.base);
-    int result = A + B; // adun valorile
+    int result = A + B; //adun valorile
 
     int baza_noua;
     if (a.base > b.base)
@@ -179,7 +179,7 @@ Number operator+(const Number& a, const Number& b)
 
     //nr cifre rezultat in noua baza
     int nr_aux = 0;
-    int aux = result;//ii fac copie numaruli
+    int aux = result;
 
     if (aux == 0)
         nr_aux = 1;
@@ -194,7 +194,7 @@ Number operator+(const Number& a, const Number& b)
     char* sir = new char[nr_aux + 1];//aloc spatiu pt sirul rezultat din adunarea numerelor
     sir[nr_aux] = '\0';
 
-    // Transform valoarea în baza noua
+    // Transform valoarea Ã®n baza noua
     aux = result;
     for (int i = nr_aux - 1; i >= 0; i--)
     {
@@ -207,8 +207,8 @@ Number operator+(const Number& a, const Number& b)
 
         aux = aux / baza_noua;
     }
-    Number rezultat(sir, baza_noua);//creez noul obiect prin constructor folosind sirul si baza
-    delete[] sir;//pt ca apeland constructorul s face noul obiect si nu mai am nevoie de acest sir
+    Number rezultat(sir, baza_noua);
+    delete[] sir;
     return rezultat;
 }
 
@@ -342,7 +342,7 @@ Number Number::operator--(int)//i--
     }
     else 
     {
-        this->value[strlen(this->value) - 1] = '\0';//sterg ultimul caracter; in loc de 16 se pune 1
+        this->value[strlen(this->value) - 1] = '\0';//sterg ultimul caracter
     }
     return aux;
 }
@@ -358,7 +358,8 @@ int Number::ToDecimal(const char* val, int base)
         int d;
         if (c >= '0' && c <= '9')
             d = c - '0';
-        else if (c >= 'A' && c <= 'F')
+        else
+            if (c >= 'A' && c <= 'F')
             d = 10 + (c - 'A');
         else
             d = 0;
