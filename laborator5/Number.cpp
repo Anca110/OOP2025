@@ -313,7 +313,7 @@ char& Number::operator[](int index)
 
 // --;++
 
-Number& Number::operator--() //--i
+Number& Number::operator--()//--i
 {
     if (strlen(this->value) <= 1)
     {
