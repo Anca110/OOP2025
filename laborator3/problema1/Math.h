@@ -2,7 +2,7 @@
 class Math
 {
 public:
-    static int Add(int, int);
+    static int Add(int, int);//cand o apelezi daca e STATICA nu mai trebuie intai sa creeziun obiect si sa faci Class c; c.Add;
     static int Add(int, int, int);
     static int Add(double, double);
     static int Add(double, double, double);
