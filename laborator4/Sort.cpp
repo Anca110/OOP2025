@@ -14,7 +14,7 @@ Sort::Sort(int numar_elemente, int min_element, int max_element)//constructor ca
 	srand(time(0));// nr generate sa fie diferite in functie de timpul actual de rulare
 	for (int i = 0; i < numar_elemente; i++)
 	{
-		vector_elemente[i] = min_element + rand() % (max_element - min_element + 1);
+		vector_elemente[i] = min_element + rand() % (max_element - min_element + 1);//rand() → returnează un număr aleator mare;% (max - min + 1) → îl limitează la o valoare între 0 și (max - min); + min_element → deplasează rezultatul ca să fie în intervalul dorit [min, max]
 		cout << vector_elemente[i] << " ";
 	}
 
@@ -22,11 +22,11 @@ Sort::Sort(int numar_elemente, int min_element, int max_element)//constructor ca
 
 /*Sort::Sort(initializer_list<int> lista)//???????????
 {
-	numar_elemente = lista.size();  // Afl�m num�rul de elemente din list�
-	vector_elemente = new int[numar_elemente];  // Aloc�m memorie pentru vector
+	numar_elemente = lista.size();  // Aflãm numãrul de elemente din listã
+	vector_elemente = new int[numar_elemente];  // Alocãm memorie pentru vector
 
 	int i = 0;
-	for (int num : lista) {  // Copiem elementele �n vector
+	for (int num : lista) {  // Copiem elementele în vector
 		vector_elemente[i++] = num;
 		cout << vector_elemente[i] << endl;
 	}
