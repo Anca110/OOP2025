@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-	cout << "suma a doua nr intregi:" << Math::Add(3, 5) << endl;
+	cout << "suma a doua nr intregi:" << Math::Add(3, 5) << endl;//fiind metodele statice n a trebuit sa mai creez un obiect ca s pot apela functia!!!!!!!!!!!!!
 	cout << "suma a 3 nr intregi:" << Math::Add(3, 5, 6) << endl;
 	cout << "suma a doua nr de tip double:" << Math::Add(3.5, 5.7) << endl;
 	cout << "suma a 3 nr de tip double:" << Math::Add(3.6, 5.4, 2.5) << endl;
